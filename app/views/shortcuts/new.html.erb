@@ -1,1 +1,8 @@
-Hello
+<%= form_for @shortcut do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :url %>
+    <%= f.text_field :url %>
+    <%= f.button :submit %>
+  </p>
+<% end %>
