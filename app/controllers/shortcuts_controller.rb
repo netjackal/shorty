@@ -1,0 +1,3 @@
+class ShortcutsController < ApplicationController
+
+end
