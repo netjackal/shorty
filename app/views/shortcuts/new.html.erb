@@ -1,8 +1,7 @@
-<%= form_for @shortcut do |f| %>
-  <%= f.error_messages %>
+<%= form_for(:shortcut) do |f| %>
   <p>
     <%= f.label :url %>
     <%= f.text_field :url %>
-    <%= f.button :submit %>
+    <%= f.submit %>
   </p>
-<% end %>
+<%- end %>
