@@ -10,5 +10,6 @@ class CreateShortcuts < ActiveRecord::Migration
   end
 
   def self.down
+    drop_table(:shortcuts)
   end
 end
