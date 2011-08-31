@@ -1,5 +1,5 @@
 Shorty::Application.routes.draw do
-  resources :shortcuts, :only => [:new]
+  resources :shortcuts, :only => [:new, :index]
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
