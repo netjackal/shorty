@@ -27,8 +27,11 @@ describe ShortcutsController do
   end
   describe "#index" do
     it "should list all current shortcuts successfully" do
+      Shortcut.create!(:url=>"http://one", :hash=>"/123qwe", :visit_count=>1)
       get :index
-      
+      assigns(:shortcuts).should_not be_nil
+      assigns(:shortcuts).length.should == 1
+      assigns(:shortcuts).first.url.should == "http://one"
     end
   end
 end
