@@ -25,4 +25,9 @@ describe ShortcutsController do
       response.should redirect_to shortcuts_path
     end
   end
+  describe "#index" do
+    it "should list all current shortcuts successfully" do
+      get :index
+    end
+  end
 end
