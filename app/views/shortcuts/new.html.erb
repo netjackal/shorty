@@ -1,7 +1,7 @@
-<%= form_for(:shortcut) do |f| %>
+<%= form_for @shortcut, :as => :shortcut, :url => shortcuts_path(@shortcut) do |f| %>
   <p>
     <%= f.label :url %>
     <%= f.text_field :url %>
     <%= f.submit %>
   </p>
-<%- end %>
+<% end %>
