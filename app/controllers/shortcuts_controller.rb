@@ -10,4 +10,8 @@ class ShortcutsController < ApplicationController
       redirect_to shortcuts_path
     end
   end
+
+  def index
+    @shortcuts = Shortcut.all
+  end
 end

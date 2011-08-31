@@ -28,6 +28,7 @@ describe ShortcutsController do
   describe "#index" do
     it "should list all current shortcuts successfully" do
       get :index
+      
     end
   end
 end
