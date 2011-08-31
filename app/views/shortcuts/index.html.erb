@@ -2,11 +2,13 @@
   <th>URL</th>
   <th>Hash</th>
   <th>Count</th>
-  <%- @shortcuts.each do |s| -%>
-    <tr>
-      <td><%= s.url %></td>
-      <td><%= s.hash %></td>
-      <td><%= s.visit_count %></td>
-    </tr>
-  <%- end -%>
+  <% if @shortcuts.length > 0 %>
+    <% @shortcuts.each do |s| %>
+      <tr>
+        <td><%= s.url %></td>
+        <td><%= s.hash %></td>
+        <td><%= s.visit_count %></td>
+      </tr>
+    <% end %>
+  <% end %>
 </table>
