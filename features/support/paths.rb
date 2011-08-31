@@ -13,6 +13,8 @@ module NavigationHelpers
     when /^the new shortcut page$/
       new_shortcut_path
 
+    when /^the list shortcuts page$/
+      shortcuts_path
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #
